@@ -30,7 +30,7 @@ print(pbinom(seq(0,5),5,0.4))
 # el numero de preguntas acertadas en un examen sigue una distribución N(120,20)
 # calcular la probabilidad de acertar exactamente 160 preguntas
 
-print('La probabilidad de acertar 160 preguntas es   ')
+print('La probabilidad de acertar 160 preguntas es  ')
 print(dnorm(160,150,20))
 
 # acertar hasta 160

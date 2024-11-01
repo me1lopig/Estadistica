@@ -87,16 +87,38 @@ pie(weather.frec.rel,labels=etiquetas,col=c("grey","blue","yellow"))
 
 # Histogramas
 
-par(mfrow=c(2,2))
+par(mfrow=c(2,2)) # crea una matriz de graficos
 hist(airquality$Ozone)
 hist(airquality$Solar.R)
 hist(airquality$Wind)
 hist(airquality$Temp)
+par(mfrow=c(1,1)) # a partir de aqui solo un grafico por ventana
 
-# Calculo de los coefi ientes de asimetria
-coeficientes<-sapply(X=airquality[,1:4], skewness,na.rm=T)
+
+# funcion para el calculo del coeficiente de curtosis solo
+
+coeficientes<-sapply(X<-airquality[,1:4], skewness)
 print("Coeficientes de asimetría")
 print(coeficientes)
+
+# representacion de la variable TEMP
+m=mean(airquality$Temp)
+s=sd(airquality$Temp)
+hist(airquality$Temp,prob=T,main="Temperatura")
+curve(dnorm(x,mean=m,sd=s),col="darkblue",lwd=2,add=TRUE)
+
+# representacion de la variable wind
+m=mean(airquality$Wind)
+s=sd(airquality$Wind)
+hist(airquality$Wind,prob=T,main="Viento")
+curve(dnorm(x,mean=m,sd=s),col="darkblue",lwd=2,add=TRUE)
+
+
+# diagramas de cajas y bigotes
+
+boxplot(airquality$Ozone,col = "lightblue")
+title("Grafico de bigotes de la variable Ozono")
+
 
 
 
