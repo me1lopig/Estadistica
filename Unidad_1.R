@@ -71,7 +71,7 @@ lines(xseq,y,col="red")
 
 # obtener una muestra aleatoria de los alumnos que ha podido llegar en los últimos 10 años
 
-print('Muestra aleatoria de alumnos extrangeros recibidos en los últimos 10 años   ')
+print('Muestra aleatoria de alumnos extranjeros recibidos en los últimos 10 años   ')
 print(rpois(10,2))
 
 # probabiliadd de que en un año lleguen 4 alumnos  exactamente
