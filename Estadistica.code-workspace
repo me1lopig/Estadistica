@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"r.rpath.windows": "E:\\Program Files\\R\\R-4.4.2\\bin"
+	}
 }

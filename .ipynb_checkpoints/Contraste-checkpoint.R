@@ -1,4 +1,3 @@
-
 # ejemplos de contraste de hipótesis
 
 # intervalo de confianza para la media de una población con la distribucion  t de Student
