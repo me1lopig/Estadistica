@@ -2,7 +2,8 @@
 # una pareja tiene 5 hijos 
 # y una probabilidad de que sea varon del 0,40
 
-# calcular la probabilidad de que tengan tres hijos varones 
+# calcular la probabilidad de que tengan tres hijos varones
+
 
 print('La probabilidad de tener tres hijos varones ')
 print(dbinom(3,5,0.4))
@@ -54,7 +55,7 @@ print(rnorm(1,150,20))
 print("Diez numeros aleatorios ")
 print(rnorm(10,150,20))
 
-# representacion de la funcion de densidad de ka distribucion normal
+# representacion de la funcion de densidad de la distribucion normal
 
 # representacion del histograma y una aproximacon a la funcion de densidad
 x<-rnorm(1000,150,20)
