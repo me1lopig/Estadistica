@@ -56,6 +56,7 @@ print("Diez numeros aleatorios ")
 print(rnorm(10,150,20))
 
 # representacion de la funcion de densidad de la distribucion normal
+# se aplica para medir la probabilidad de ocurrencia de un suceso raro  
 
 # representacion del histograma y una aproximacon a la funcion de densidad
 x<-rnorm(1000,150,20)
