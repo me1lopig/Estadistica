@@ -1,6 +1,6 @@
 # caso de correlación con varias variables 
 
-# importación de datos cambiamos de directorio
+# importación de datos cambiamos de directorio de trabajo
 
 setwd("/Users/germanlopezpineda/Documents/Python/Estadistica/ModelosRegresion")
 
